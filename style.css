@@ -1,0 +1,36 @@
+.login {
+    box-shadow: 2px 4px 2px rgb(174, 173, 173);
+    height: 320px;
+    padding: 25px;
+    width:355px;
+    background-color: rgb(251, 250, 250);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    align-items: center;
+}
+.wrapp {
+    width: 100%;
+}
+
+.inputtext {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+input[type=submit]{
+    padding: 8px;
+    background-color:#20c997;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    font-weight: 500;
+
+}
