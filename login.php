@@ -13,14 +13,14 @@
    <div class="login">
       <h2>Login Admin Panel</h2>
       <div class="wrapp">
-      <form method="post">
+      <form method="POST">
          <div class="inputtext">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username"><br>
+            <span class="icon"><img src="user.svg" alt=""></span>
+            <input type="text" name="username" id="username" placeholder="Username"><br>
          </div>
          <div class="inputtext">
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password">
+            <span class="icon"><img src="password.svg" alt=""></span>
+            <input type="password" name="password" id="password" placeholder="Password">
          </div>
          <input type="submit" name="signin" value="login">
       </form>
@@ -39,8 +39,8 @@
          $_SESSION['loginID']= $_POST['username'];
          header("location:adminpanel.php");
        } else {
-           echo "Invalid username or password!";
-       }
+         echo '<p style="color: red; font-weight: bold; margin-top: 20px; text-align: center;">Invalid username or password</p>';
+      }
    }
    ?>
    
