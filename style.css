@@ -8,7 +8,7 @@
     margin: auto;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 180px;
     align-items: center;
 }
 .wrapp {
@@ -16,20 +16,34 @@
 }
 
 .inputtext {
-    padding: 10px;
-}
+    position: relative;
+    margin-bottom: 15px;
 
+}
 input {
     width: 100%;
-    padding: 8px;
     font-size: 18px;
     font-weight: 300;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid rgb(209, 209, 209);
+    box-sizing: border-box;
+
 }
+.icon{
+    position: absolute;
+    left: 10px;
+    top: 20%;
+}
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
 input[type=submit]{
     padding: 8px;
     background-color:#20c997;
     border: none;
-    margin-top: 15px;
+    margin-top: 25px;
     color: white;
     font-weight: 500;
 
