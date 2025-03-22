@@ -7,6 +7,27 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            font-size: 18px;
+            display: flex;
+            background-color: #20c997;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+        button{
+            padding: 10px;
+            background-color: #ffc107;
+            border: none;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
