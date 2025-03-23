@@ -39,8 +39,9 @@
       // Ensure secure input using mysqli_real_escape_string
       $username = mysqli_real_escape_string($conn, $_POST['username']);
       $password = mysqli_real_escape_string($conn, $_POST['password']);
+      
       $sqst = "SELECT * FROM admins WHERE username = '$username' AND password = '$password'";
-      $result = mysqli_query($conn, $sqst);
+      $result = mysqli_query($conn, $sqst); //run query
 
       if (mysqli_num_rows($result) == 1) {
          session_start();
