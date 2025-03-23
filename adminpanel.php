@@ -39,14 +39,14 @@ session_start();
 <body>
     <div class="container">
         <h2>Welcome to dashboard -
-            <?php echo $_SESSION['loginID']?>
+            <?php echo $_SESSION['loginID'] ?>
         </h2>
         <form method="post">
             <button name="logout">Log Out</button>
         </form>
     </div>
     <?php
-    if(isset($_POST['logout'])) {
+    if (isset($_POST['logout'])) {
         session_destroy();
         header("location: login.php");
         exit();
