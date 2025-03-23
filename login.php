@@ -17,7 +17,7 @@
 <body>
    <?php
    include 'dbconnection.php'
-      ?>
+   ?>
    <div class="login">
       <h2>Login Admin Panel</h2>
       <div class="wrapp">
