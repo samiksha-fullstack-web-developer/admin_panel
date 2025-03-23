@@ -34,6 +34,7 @@
          </form>
       </div>
    </div>
+   
    <?php
    if (isset($_POST['signin'])) {
       // Ensure secure input using mysqli_real_escape_string
