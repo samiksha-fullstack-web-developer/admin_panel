@@ -22,6 +22,6 @@ mysqli_select_db($conn, $dbname);
 
 //create table
 
-$table = ""
+$table = "CREATE TABLE admins("
 
 ?>
