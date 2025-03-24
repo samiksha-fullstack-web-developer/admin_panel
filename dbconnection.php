@@ -9,6 +9,7 @@ if ($conn->connect_error) {
   die("connection failed:" . $conn->connect_error);
 }
 
+//create database
 $dbname = "admin_portal";
 $sql = "CREATE DATABASE $dbname";
 
