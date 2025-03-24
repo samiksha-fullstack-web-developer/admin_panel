@@ -2,11 +2,20 @@
    $servername = 'localhost';
    $username = 'root';
    $password = '';
-   $dbname = 'admin_portal';
 
- $conn = new mysqli($servername, $username, $password, $dbname);
+ $conn = new mysqli($servername, $username, $password);
 
 if($conn->connect_error){
   die("connection failed:".$conn->connect_error);
+}
+
+$sql = "CREATE DATABASE admin_portal";
+
+if(mysqli_query($conn, $sql)){
+  echo "Database created successfully.<br>";
+}
+else{
+  echo "Err"
+}
 }
 ?>
