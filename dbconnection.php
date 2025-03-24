@@ -15,7 +15,9 @@ if(mysqli_query($conn, $sql)){
   echo "Database created successfully.<br>";
 }
 else{
-  echo "Err"
+  echo "Error creating database: ". mysqli_error($conn);
 }
-}
+
+
+
 ?>
