@@ -22,6 +22,7 @@ mysqli_select_db($conn, $dbname);
 
 //create table
 
-$table = "CREATE TABLE admins("
+$table = "CREATE TABLE admins(id int UNSIGNED AUTO_INCREMENT PRIMARY KEY, username VARCHAR(30) NOT NULL, password VARCHAR(255) NOT NULL)";
+
 
 ?>
