@@ -21,4 +21,4 @@ $table = "CREATE TABLE admins(id int UNSIGNED AUTO_INCREMENT PRIMARY KEY, userna
 
 mysqli_query($conn, $table)
 
-?>
+  ?>
