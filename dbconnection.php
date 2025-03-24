@@ -17,6 +17,6 @@ if(mysqli_query($conn, $sql)){
 else{
   echo "Error creating database: ". mysqli_error($conn);
 }
-//connect to dab
-mysqli_select_db($conn, $dbname)
+//connect to database
+mysqli_select_db($conn, $dbname);
 ?>
