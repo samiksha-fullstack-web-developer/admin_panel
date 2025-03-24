@@ -11,13 +11,13 @@ if ($conn->connect_error) {
 
 //create database
 $dbname = "admin_portal";
-$sql = "CREATE DATABASE $dbname";
+$sql = "CREATE DATABASE IF NOT EXISTS $dbname";
 
 //connect to database
 mysqli_select_db($conn, $dbname);
 
 //create table
-$table = "CREATE TABLE admins(id int UNSIGNED AUTO_INCREMENT PRIMARY KEY, username VARCHAR(30) NOT NULL, password VARCHAR(255) NOT NULL)";
+$table = "CREATE TABLE IF NOT EXISTS admins(id int UNSIGNED AUTO_INCREMENT PRIMARY KEY, username VARCHAR(30) NOT NULL, password VARCHAR(255) NOT NULL)";
 
 mysqli_query($conn, $table)
 
