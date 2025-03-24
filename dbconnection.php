@@ -8,6 +8,7 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
   die("connection failed:" . $conn->connect_error);
 }
+
 $dbname = "admin_portal";
 $sql = "CREATE DATABASE $dbname";
 
