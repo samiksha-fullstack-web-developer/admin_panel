@@ -19,4 +19,9 @@ else{
 }
 //connect to database
 mysqli_select_db($conn, $dbname);
+
+//create table
+
+$table = ""
+
 ?>
