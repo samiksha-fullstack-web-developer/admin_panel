@@ -39,7 +39,7 @@ session_start();
 <body>
     <div class="container">
         <h2>Welcome to dashboard -
-            <?php echo $_SESSION['loginID'] ?>
+            <?php echo  $_SESSION['loginID'] ?>
         </h2>
         <form method="post">
             <button name="logout">Log Out</button>
